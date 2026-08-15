@@ -1,47 +1,114 @@
-# Skin_Cancer_Detection_Project
+# Skin Cancer Detection Using Deep Learning
 
-INTRODUCTION
+An undergraduate Final Year Project focused on binary skin lesion classification using transfer learning and comparative evaluation of deep learning models.
 
-Skin cancer is one of the most world-wide diseases that
-cause death. It is the abnormal growth of skin cells, most often develops on skin exposed to the sun. But this common form of cancer can also occur on areas of your skin not ordinarily exposed to sunlight.
+## Project Background
 
-There are three major types of skin cancer
+This project was originally developed as a Bachelor of Science in Computer Science Final Year Project in 2022 at Bahria University, Karachi Campus. The public repository has subsequently been reorganised and documented to improve accessibility and presentation of the original work. The original notebooks and reported experimental work remain the basis of this repository.
 
-Basal cell carcinoma
+## Overview
 
-Squamous cell carcinoma
+The project investigates automated classification of skin lesions into two classes:
 
-Melanoma
+- Benign / non-melanoma
+- Melanoma
 
-Note: two types of carcinoma are very near to each other so usually initial categorization comes in melanoma and non-melanoma.
+The implementation compares multiple transfer-learning approaches and includes a fine-tuned MobileNetV2 experiment. The project also included a prototype Android application using a TensorFlow Lite model.
 
-Early detection of these lesions may increase the curing rate to 90%. The high similarity
-between different types of skin lesions makes the visual examination hard and may lead to wrong investigation. Therefore, an automated system is required for skin lesion classification.
+## Models Evaluated
 
-Skin cancer is the cancer you can see. Unlike cancers that develop inside the body, skin cancers form on the outside and are usually visible. That’s why skin exams, both at home and with a dermatologist, are especially vital. Early detection saves lives. This project gives the power to detect cancer early when it’s easiest to cure, before it can become dangerous, disfiguring or deadly.
+The project report and repository document experiments with:
 
-DATA SET (Using Combination of 3 Datasets)
+- MobileNetV2
+- Fine-tuned MobileNetV2
+- VGG16
+- InceptionV3
 
-https://www.kaggle.com/c/siim-isic-melanoma-classification/data
+The available notebooks are preserved as the original implementation artifacts.
 
-https://www.kaggle.com/fanconic/cnn-for-skin-cancer-detection/data
+## Reported Results
 
-https://www.kaggle.com/nodoubttome/skin-cancer9-classesisic
+The FYP report describes the following headline results:
 
-METHODOLOGY
+| Model / Experiment | Reported Accuracy |
+| --- | ---: |
+| MobileNetV2 | 96% |
+| Fine-tuned MobileNetV2 | 99% |
+| VGG16 | 83% |
+| InceptionV3 | 90% |
 
-We will use Deep Learning and Transfer Learning to train the model that can classify skin Cancer Melanoma and Non-Melanoma. We can compare the accuracy results of three transfer learning techniques. They are:
+Some tables and narrative sections in the original report present results from different runs and formats. For transparency, these figures are documented as reported in the original FYP and should not be interpreted as results reproduced after the 2022 project without re-running the experiments.
 
-MobileNet V2
+## Repository Contents
 
-InceptionV3
+- `MobileNetV2.ipynb` - MobileNetV2 experiment
+- `Updated MobileNetV2.ipynb` - updated/fine-tuning experiment
+- `VGG16_(1) (1).ipynb` - VGG16 experiment
+- `InceptionV3_(1).ipynb` - InceptionV3 experiment
+- `docs/project-background.md` - project context and provenance
+- `docs/methodology.md` - methodology summary based on the original report
+- `docs/results.md` - reported experimental results and interpretation notes
+- `docs/mobile-application.md` - Android and TensorFlow Lite component
+- `requirements.txt` - environment guidance based on verified notebook imports
 
-VGG16
+## Technical Approach
 
-Then, we use the MobileNetV2 Model for fine tuning to obtain more improved results with high accuracy and then use the model for skin cancer detection mobile app development.
+The project used TensorFlow/Keras-based transfer learning for binary classification. The documented workflow includes data preparation, image preprocessing and augmentation, model training, comparative evaluation, and MobileNetV2 fine-tuning. The report identifies TensorFlow 2.7.0 in the original implementation environment and describes Adam optimisation and sigmoid activation for binary classification.
 
-Objectives:
+## Dataset
 
-Detection and Analysis of Skin Cancer
+The original project combined data from multiple publicly available skin-cancer datasets. The earlier repository listed the following sources:
 
-Binary classification of Melanoma and Non-Melanoma skin cancers
+- SIIM-ISIC Melanoma Classification
+- CNN for Skin Cancer Detection
+- ISIC skin cancer dataset collection
+
+Dataset availability and licensing may change. Users should review the original source terms before downloading or redistributing data. Exact dataset counts in the original report contain inconsistencies, so this repository does not present unverified class totals as definitive.
+
+## Reproducing the Work
+
+The notebooks reflect the original 2022 environment and may require path and dependency updates before execution.
+
+1. Create a Python environment.
+2. Install dependencies from `requirements.txt`.
+3. Obtain the datasets from their original sources, subject to their terms.
+4. Update local dataset paths in the notebooks.
+5. Run the notebooks individually.
+
+Example:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+On Windows, activate the environment with:
+
+```bash
+.venv\Scripts\activate
+```
+
+## Mobile Application Component
+
+The original FYP also included a prototype Android application integrating a TensorFlow Lite model for image classification. The report documents Android Studio, Android Jetpack Navigation and ViewModel components, Firebase Cloud Storage, and TensorFlow Lite as part of this implementation.
+
+## Important Research and Reproducibility Note
+
+This repository documents an academic project originally completed in 2022. Documentation improvements made later do not represent newly conducted experiments. The reported results are preserved from the original FYP report and implementation records.
+
+## Responsible Use
+
+This project is intended for educational and research purposes. It is not a validated clinical decision-support system and must not be used as a substitute for professional medical diagnosis.
+
+## Team Project
+
+This was an undergraduate team Final Year Project. Repository documentation describes the project as a team effort and should not be interpreted as a claim that all components were implemented by a single contributor.
+
+## License and Data
+
+No dataset files are included in this repository. Users are responsible for complying with the licenses and terms of the original data sources and any institutional requirements applicable to the project.
+
+## Documentation
+
+See the `docs/` directory for additional information on the project background, methodology, reported results, and mobile application component.
