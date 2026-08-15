@@ -57,13 +57,20 @@ The project used TensorFlow/Keras-based transfer learning for binary classificat
 
 ## Dataset
 
-The original project combined data from multiple publicly available skin-cancer datasets. The earlier repository listed the following sources:
+The original project combined data from three publicly available datasets. The exact source links listed in the repository's original 2022 README were:
 
-- SIIM-ISIC Melanoma Classification
-- CNN for Skin Cancer Detection
-- ISIC skin cancer dataset collection
+1. **SIIM-ISIC Melanoma Classification**  
+   https://www.kaggle.com/c/siim-isic-melanoma-classification/data
 
-Dataset availability and licensing may change. Users should review the original source terms before downloading or redistributing data. Exact dataset counts in the original report contain inconsistencies, so this repository does not present unverified class totals as definitive.
+2. **CNN for Skin Cancer Detection**  
+   https://www.kaggle.com/fanconic/cnn-for-skin-cancer-detection/data
+
+3. **Skin Cancer: 9 Classes ISIC**  
+   https://www.kaggle.com/nodoubttome/skin-cancer9-classesisic
+
+These links are retained from the original project documentation. Dataset availability, access requirements, and licensing terms may change, so users should review the terms on the original sources before downloading or redistributing any data.
+
+Exact dataset counts in the original report contain inconsistencies, so this repository does not present unverified class totals as definitive.
 
 ## Reproducing the Work
 
@@ -71,7 +78,7 @@ The notebooks reflect the original 2022 environment and may require path and dep
 
 1. Create a Python environment.
 2. Install dependencies from `requirements.txt`.
-3. Obtain the datasets from their original sources, subject to their terms.
+3. Obtain the datasets from the original sources listed above, subject to their terms.
 4. Update local dataset paths in the notebooks.
 5. Run the notebooks individually.
 
@@ -107,7 +114,7 @@ This was an undergraduate team Final Year Project. Repository documentation desc
 
 ## Dataset Availability
 
-This project was developed using publicly available skin lesion image datasets. The original dataset files are not included in this repository. Please refer to the dataset sources listed above and review their respective terms of use and licensing requirements before downloading, using, or redistributing the data.
+This project was developed using the publicly available datasets listed above. The original dataset files are not included in this repository. Please refer to the original sources and review their respective terms of use and licensing requirements before downloading, using, or redistributing the data.
 
 ## Documentation
 
