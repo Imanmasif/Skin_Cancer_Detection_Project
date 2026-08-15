@@ -1,0 +1,6 @@
+cff-version: 1.2.0
+message: "If you use or refer to this project, please cite the repository and acknowledge the original team project."
+title: "Skin Cancer Detection Using Deep Learning"
+type: software
+abstract: "An undergraduate Final Year Project exploring transfer learning for binary skin lesion classification and a prototype mobile deployment workflow."
+repository-code: "https://github.com/Imanmasif/Skin_Cancer_Detection_Project"

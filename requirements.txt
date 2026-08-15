@@ -1,0 +1,12 @@
+# Environment guidance based on the original notebooks and FYP report.
+# The original implementation records TensorFlow 2.7.0.
+# Additional packages may be required depending on the notebook and local dataset setup.
+
+tensorflow==2.7.0
+numpy
+pandas
+matplotlib
+scikit-learn
+Pillow
+jupyter
+notebook
