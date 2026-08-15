@@ -105,9 +105,9 @@ This project is intended for educational and research purposes. It is not a vali
 
 This was an undergraduate team Final Year Project. Repository documentation describes the project as a team effort and should not be interpreted as a claim that all components were implemented by a single contributor.
 
-## License and Data
+## Dataset Availability
 
-No dataset files are included in this repository. Users are responsible for complying with the licenses and terms of the original data sources and any institutional requirements applicable to the project.
+This project was developed using publicly available skin lesion image datasets. The original dataset files are not included in this repository. Please refer to the dataset sources listed above and review their respective terms of use and licensing requirements before downloading, using, or redistributing the data.
 
 ## Documentation
 
